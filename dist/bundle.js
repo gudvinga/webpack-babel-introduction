@@ -65,10 +65,32 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__mytext__ = __webpack_require__(1);
+
+
+const renderDiv = document.querySelector('#render');
 let greating = 'Hello webpack and babel';
-console.log(greating);
+
+renderDiv.innerHTML = `
+    <h1>${greating}</h1>
+    ${__WEBPACK_IMPORTED_MODULE_0__mytext__["a" /* text */]}
+    `;
+
+
+/***/ }),
+/* 1 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+const text = `<p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia facilis necessitatibus dolorem nemo repellendus impedit provident quas nobis et assumenda, non ullam ut ipsam quae autem distinctio eligendi dignissimos ipsum?
+    </p>`;
+/* harmony export (immutable) */ __webpack_exports__["a"] = text;
+
 
 /***/ })
 /******/ ]);
