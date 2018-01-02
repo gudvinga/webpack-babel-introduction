@@ -1,0 +1,13 @@
+{
+  "name": "webpack-babel-introduction",
+  "version": "1.0.0",
+  "description": "My first experience in webpack and babel",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    
+  },
+  "author": "gudvinga",
+  "license": "ISC"
+}
