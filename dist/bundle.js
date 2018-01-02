@@ -65,32 +65,33 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__mytext__ = __webpack_require__(1);
 
 
-const renderDiv = document.querySelector('#render');
-let greating = 'Hello webpack and babel';
+var _mytext = __webpack_require__(1);
 
-renderDiv.innerHTML = `
-    <h1>${greating}</h1>
-    ${__WEBPACK_IMPORTED_MODULE_0__mytext__["a" /* text */]}
-    `;
+var renderDiv = document.querySelector('#render');
+var greating = 'Hello webpack and babel';
 
+var render = function render() {
+    renderDiv.innerHTML = '\n    <h1>' + greating + '</h1>\n    ' + _mytext.text + '\n    ';
+};
+
+render();
 
 /***/ }),
 /* 1 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-const text = `<p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia facilis necessitatibus dolorem nemo repellendus impedit provident quas nobis et assumenda, non ullam ut ipsam quae autem distinctio eligendi dignissimos ipsum?
-    </p>`;
-/* harmony export (immutable) */ __webpack_exports__["a"] = text;
 
+
+Object.defineProperty(exports, "__esModule", {
+        value: true
+});
+var text = exports.text = "<p>\n        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia facilis necessitatibus dolorem nemo repellendus impedit provident quas nobis et assumenda, non ullam ut ipsam quae autem distinctio eligendi dignissimos ipsum?\n    </p>";
 
 /***/ })
 /******/ ]);
