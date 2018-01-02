@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
@@ -10,5 +11,8 @@ module.exports = {
         rules: [
             { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
         ]
-    }
+    },
+    plugins: [
+        new webpack.optimize.UglifyJsPlugin()
+    ]
 };
