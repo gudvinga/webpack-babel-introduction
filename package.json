@@ -4,10 +4,10 @@
   "description": "My first experience in webpack and babel",
   "main": "index.js",
   "dependencies": {},
-  "devDependencies": {},
-  "scripts": {
-    
+  "devDependencies": {
+    "webpack": "^3.10.0"
   },
+  "scripts": {},
   "author": "gudvinga",
   "license": "ISC"
 }
